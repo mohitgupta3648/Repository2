@@ -1,0 +1,318 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 09 19:45:28 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>52 seconds (52487 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pkg.Test99GuruLogin.setup()'><b>setup</b><br>Test class: pkg.Test99GuruLogin</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+trap method startup on followonsearch@mozilla.com version 0.9.7
+1531145740862	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1531145740864	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1531145740866	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1531145740868	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1531145740869	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1531145740871	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 32.1.0
+1531145740871	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1531145740873	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1531145740874	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1531145740893	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0
+1531145740902	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1531145740902	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1531145740902	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1531145740902	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1531145740902	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1531145740903	addons.manager	DEBUG	Starting provider: GMPProvider
+1531145740906	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1531145740907	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1531145740907	addons.manager	DEBUG	Starting provider: PluginProvider
+1531145740907	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1531145740907	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1531145740927	addons.manager	DEBUG	Completed startup sequence
+1531145751125	addons.repository	DEBUG	No addons.json found.
+1531145759840	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\mohit.g\AppData\Local\Temp\anonymous7049120735104305578webdriver-profile\extensions\webdriver-staging
+1531145759842	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1531145759843	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1531145759844	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1531145759845	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1531145759846	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1531145759847	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1531145759847	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1531145759848	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1531145759849	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1531145759850	addons.xpi	DEBUG	Existing add-on {cb40da56-497a-4add-955d-3377cae4c33b} in winreg-app-global
+1531145759851	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\mohit.g\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+Unable to read VR Path Registry from C:\Users\mohit.g\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 1764, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;LPCL-CWJD8R1&apos;, ip: &apos;172.16.4.119&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at pkg.Test99GuruLogin.setup(Test99GuruLogin.java:29)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+trap method startup on followonsearch@mozilla.com version 0.9.7
+1531145740862	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1531145740864	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1531145740866	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1531145740868	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1531145740869	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1531145740871	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 32.1.0
+1531145740871	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1531145740873	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1531145740874	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1531145740893	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0
+1531145740902	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1531145740902	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1531145740902	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1531145740902	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1531145740902	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1531145740903	addons.manager	DEBUG	Starting provider: GMPProvider
+1531145740906	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1531145740907	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1531145740907	addons.manager	DEBUG	Starting provider: PluginProvider
+1531145740907	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1531145740907	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1531145740927	addons.manager	DEBUG	Completed startup sequence
+1531145751125	addons.repository	DEBUG	No addons.json found.
+1531145759840	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\mohit.g\AppData\Local\Temp\anonymous7049120735104305578webdriver-profile\extensions\webdriver-staging
+1531145759842	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1531145759843	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1531145759844	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1531145759845	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1531145759846	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1531145759847	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1531145759847	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1531145759848	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1531145759849	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1531145759850	addons.xpi	DEBUG	Existing add-on {cb40da56-497a-4add-955d-3377cae4c33b} in winreg-app-global
+1531145759851	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\mohit.g\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+Unable to read VR Path Registry from C:\Users\mohit.g\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 1764, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 29 more
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1848289347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1848289347'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+trap method startup on followonsearch@mozilla.com version 0.9.7
+1531145740862	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1531145740864	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1531145740866	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1531145740868	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1531145740869	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1531145740871	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 32.1.0
+1531145740871	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1531145740873	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1531145740874	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1531145740893	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0
+1531145740902	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1531145740902	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1531145740902	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1531145740902	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1531145740902	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1531145740903	addons.manager	DEBUG	Starting provider: GMPProvider
+1531145740906	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1531145740907	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1531145740907	addons.manager	DEBUG	Starting provider: PluginProvider
+1531145740907	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1531145740907	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1531145740927	addons.manager	DEBUG	Completed startup sequence
+1531145751125	addons.repository	DEBUG	No addons.json found.
+1531145759840	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\mohit.g\AppData\Local\Temp\anonymous7049120735104305578webdriver-profile\extensions\webdriver-staging
+1531145759842	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1531145759843	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1531145759844	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1531145759845	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1531145759846	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1531145759847	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1531145759847	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1531145759848	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1531145759849	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1531145759850	addons.xpi	DEBUG	Existing add-on {cb40da56-497a-4add-955d-3377cae4c33b} in winreg-app-global
+1531145759851	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\mohit.g\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+Unable to read VR Path Registry from C:\Users\mohit.g\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 1764, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;LPCL-CWJD8R1&apos;, ip: &apos;172.16.4.119&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at pkg.Test99GuruLogin.setup(Test99GuruLogin.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:647)
+	at org.testng.TestRunner.run(TestRunner.java:615)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+trap method startup on followonsearch@mozilla.com version 0.9.7
+1531145740862	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1531145740864	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1531145740866	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1531145740868	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1531145740869	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1531145740871	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 32.1.0
+1531145740871	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1531145740873	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1531145740874	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1531145740893	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0
+1531145740902	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1531145740902	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1531145740902	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1531145740902	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1531145740902	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1531145740903	addons.manager	DEBUG	Starting provider: GMPProvider
+1531145740906	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1531145740907	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1531145740907	addons.manager	DEBUG	Starting provider: PluginProvider
+1531145740907	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1531145740907	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1531145740927	addons.manager	DEBUG	Completed startup sequence
+1531145751125	addons.repository	DEBUG	No addons.json found.
+1531145759840	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\mohit.g\AppData\Local\Temp\anonymous7049120735104305578webdriver-profile\extensions\webdriver-staging
+1531145759842	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1531145759843	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1531145759844	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1531145759845	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1531145759846	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1531145759847	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1531145759847	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1531145759848	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1531145759849	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1531145759850	addons.xpi	DEBUG	Existing add-on {cb40da56-497a-4add-955d-3377cae4c33b} in winreg-app-global
+1531145759851	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\mohit.g\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+Unable to read VR Path Registry from C:\Users\mohit.g\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 1764, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pkg.Test99GuruLogin.test_Home_Page_Appear_Correct()'><b>test_Home_Page_Appear_Correct</b><br>Test class: pkg.Test99GuruLogin</td>
+<td></td>
+<td>0</td>
+<td>pkg.Test99GuruLogin@77caeb3e</td></tr>
+</table><p>
+</body>
+</html>
